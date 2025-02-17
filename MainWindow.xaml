@@ -1,0 +1,52 @@
+﻿<Window x:Class="Weather_with_API.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Weather_with_API"
+        mc:Ignorable="d"
+        Title="MainWindow"
+        Height="427.887"
+        Width="771.253">
+    <Grid Margin="1,0,0,-0.6"
+          Height="399"
+          VerticalAlignment="Top"
+          HorizontalAlignment="Left"
+          Width="761">
+        <Grid.Background>
+            <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveCaptionColorKey}}" />
+        </Grid.Background>
+        <Button Name="btnSubmit"
+                Content="Submit"
+                Width="50"
+                Height="30"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Center"
+                Margin="451,20,260,0"
+                Click="btnSubmit_Click"
+                >
+        </Button>
+        <TextBox Name="txtCity"
+                 HorizontalAlignment="Left"
+                 VerticalAlignment="Top"
+                 Margin="10,20"
+                 Width="400"
+                 Height="30"
+                 TextAlignment="Justify">
+        </TextBox>
+        <Label Name="lblShow"
+               Width="500"
+               Height="30"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Center"
+               Margin="10,50,0,0">
+        </Label>
+        <Label Name="lblShowDesc"
+               Width="500"
+               Height="30"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Center"
+               Margin="10,100,0,0">
+        </Label>
+    </Grid>
+</Window>
