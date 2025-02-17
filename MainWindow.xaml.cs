@@ -23,7 +23,7 @@ namespace Weather_with_API
     /// </summary>
     public partial class MainWindow : Window
     {
-        private const string ApiKey = "5ccb83bf4f26321a5ac73968627e4f1f";
+        private const string ApiKey = "";
         private const string BaseUrl = "http://api.openweathermap.org/data/2.5/weather";
         public class Main
         {
