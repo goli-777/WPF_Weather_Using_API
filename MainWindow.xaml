@@ -8,11 +8,11 @@
         Title="MainWindow"
         Height="427.887"
         Width="771.253">
-    <Grid Margin="1,0,0,-0.6"
+    <Grid Margin="1,0,-6.2,-0.6"
           Height="399"
           VerticalAlignment="Top"
           HorizontalAlignment="Left"
-          Width="761">
+          Width="770">
         <Grid.Background>
             <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveCaptionColorKey}}" />
         </Grid.Background>
@@ -23,8 +23,7 @@
                 VerticalAlignment="Top"
                 HorizontalAlignment="Center"
                 Margin="451,20,260,0"
-                Click="btnSubmit_Click"
-                >
+                Click="btnSubmit_Click">
         </Button>
         <TextBox Name="txtCity"
                  HorizontalAlignment="Left"
@@ -48,5 +47,12 @@
                VerticalAlignment="Center"
                Margin="10,100,0,0">
         </Label>
+        <Image Name="imgIcon"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Left"
+               Width="50"
+               Height="50"
+               Margin="120,100,0,0"
+            ></Image>
     </Grid>
 </Window>

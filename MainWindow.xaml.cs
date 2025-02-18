@@ -32,7 +32,7 @@ namespace Weather_with_API
         public class Weather
         {
             public string description { get; set; }
-           // public string main { get; set; }
+           public string icon { get; set; }
         }
         public class WeatherInfo
         {
@@ -64,6 +64,8 @@ namespace Weather_with_API
                 var weatherInfo = JsonConvert.DeserializeObject<WeatherInfo>(response.Content);
                 lblShow.Content = $"Temperature in {weatherInfo.name}: {weatherInfo.main.temp}°C";
                 lblShowDesc.Content = $"sky is: {weatherInfo.weather[0].description}";
+                string iconUrl = $"https://openweathermap.org/img/wn/{weatherInfo.weather[0].icon}.png";
+                imgIcon.Source = new BitmapImage(new Uri(iconUrl));
         }
         else
         {
